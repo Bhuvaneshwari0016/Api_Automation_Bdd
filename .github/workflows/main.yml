@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      # Step 1: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Setup Java 11
       - name: Set up Java 11
         uses: actions/setup-java@v4
         with:
@@ -21,17 +23,18 @@ jobs:
           java-version: "11"
           cache: maven
 
+      # Step 3: Run Maven tests (this will execute Test.java)
       - name: Run Cucumber API Tests
-        run: >
-          mvn clean test
-          -Dcucumber.plugin="pretty,html:target/cucumber-report.html,json:target/cucumber-report.json"
+        run: mvn clean test
 
-      - name: Verify target directory
+      # Step 4: (Optional but recommended) Verify reports exist
+      - name: List target directory
         if: always()
         run: |
-          echo "==== TARGET DIRECTORY ===="
-          ls -l target || echo "target not found"
+          echo "Listing target directory:"
+          ls -l target || echo "target directory not found"
 
+      # Step 5: Upload Cucumber HTML report
       - name: Upload Cucumber HTML Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -39,6 +42,7 @@ jobs:
           name: cucumber-html-report
           path: target/cucumber-report.html
 
+      # Step 6: Upload Cucumber JSON report
       - name: Upload Cucumber JSON Report
         if: always()
         uses: actions/upload-artifact@v4
