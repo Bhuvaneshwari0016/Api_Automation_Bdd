@@ -38,16 +38,17 @@ jobs:
 
       # Step 5: Upload Cucumber HTML report
       - name: Upload Cucumber HTML Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cucumber-html-report
-          path: target/cucumber-report.html
+  if: always()
+  uses: actions/upload-artifact@v4
+  with:
+    name: cucumber-html-report
+    path: target/cucumber-reports/*.html
 
-      # Step 6: Upload Cucumber JSON report
-      - name: Upload Cucumber JSON Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cucumber-json-report
-          path: target/cucumber-report.json
+ 
+ # Step 6: Upload Cucumber JSON report
+       - name: Upload Cucumber JSON Report
+  if: always()
+  uses: actions/upload-artifact@v4
+  with:
+    name: cucumber-json-report
+    path: target/cucumber-reports/*.json
