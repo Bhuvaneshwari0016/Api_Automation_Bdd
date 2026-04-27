@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>49/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 26 20:08:51 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38873 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_23 Unsupported method", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Method not allowed validation", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_24 Check headers", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_18 String instead of ID", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_40 Content type check", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_16 Get product by invalid ID", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_27 Validate cart list", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_31 Invalid productId", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "API availability check", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_12 Validate non empty list", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_20 Validate price greater than zero", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_21 Check title not empty", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "API availability check", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_15 Get product by valid ID", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_35 Invalid date format", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_26 Get all carts", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_30 Missing products", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_01 Valid login", "Authentication API Test Cases"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_02 Invalid password", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_25 Large response handling", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_13 Validate product fields", "Products API Testing"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Method not allowed validation", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_04 Empty username", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_28 Create cart valid data", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_07 SQL injection attempt", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_10 Response time", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_05 Empty password", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_08 Long input values", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_37 Extra fields", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_06 Missing fields", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_39 Response time", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid endpoint returns 404", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_33 Negative quantity", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_09 Special characters", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_11 Get all products", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid endpoint returns 404", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_38 Response validation", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_19 Check response time", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_14 Validate data types", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_34 Large quantity", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid endpoint returns 404", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_17 Negative ID", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Method not allowed validation", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "API availability check", "General API validations for Login, Product and Cart APIs"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_29 Missing userId", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_32 Invalid quantity", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_03 Invalid username", "Authentication API Test Cases"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_36 Empty body", "Cart API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_22 API without endpoint", "Products API Testing"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@1a677343</td></tr>
+</table><p>
+</body>
+</html>
