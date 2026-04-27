@@ -2,11 +2,9 @@ name: Run API Automation Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   api-tests:
@@ -23,31 +21,27 @@ jobs:
           java-version: "11"
           cache: maven
 
-      - name: Verify Java & Maven
-        run: |
-          java -version
-          mvn -version
-
       - name: Run Cucumber API Tests
-        run: mvn clean test
+        run: >
+          mvn clean test
+          -Dcucumber.plugin="pretty,html:target/cucumber-report.html,json:target/cucumber-report.json"
 
-      # (Optional but useful for debugging)
       - name: Verify target directory
         if: always()
         run: |
-          echo "Listing target directory:"
-          ls -R target || echo "No target directory found"
+          echo "==== TARGET DIRECTORY ===="
+          ls -l target || echo "target not found"
 
       - name: Upload Cucumber HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-html-report
-          path: target/cucumber-reports/**/*.html
+          path: target/cucumber-report.html
 
       - name: Upload Cucumber JSON Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-json-report
-          path: target/cucumber-reports/**/*.json
+          path: target/cucumber-report.json
